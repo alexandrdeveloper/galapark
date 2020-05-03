@@ -1,0 +1,102 @@
+.delivery,
+.people 
+	&__image
+		position: relative
+		height: 794px
+		img 
+			display: block
+			position: relative
+			top: 0
+			left: -160px			
+			bottom: 0
+			width: 120%
+	&__info 
+		padding: 93px 85px
+		h3 
+			text-transform: uppercase
+			color: #7dd956
+			+bold
+			font-size: 29px
+		ul 
+			padding-left: 0
+			margin-bottom: 60px
+			&:last-child
+				margin-bottom: 32px
+		li			 
+			+bold
+			color: #020202
+			font-size: 33px
+			font-weight: 400
+			position: relative
+			&::before 
+				content: ''
+				display: inline-block
+				height: 8px
+				width: 8px
+				background-color: #020202
+				border-radius: 50% 
+				margin-right: 10px
+				position: relative
+				top: -7px
+
+				 
+.people
+	position: relative
+	&__info-slider
+		padding-top: 160px
+		padding-bottom: 160px
+		padding-left: 45px
+		padding-right: 45px
+	&__info-item
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		text-align: center
+	h3.people__name
+		font-size: 50px
+		color: #070707
+		+os 
+		display: inline-block
+		margin-bottom: 100px
+	&__link
+		+os 
+		font-size: 25px
+		padding: 10px
+		border-radius: 10px
+		border: 5px solid #7dd956
+		color: #070707
+	&__info
+		font-size: 33px
+		+os 
+		color: #070707
+	&__image
+		position: relative
+
+	&__image-carousel
+		position: relative
+		width: 120%
+		transform: translateX(-120px)
+
+		img 
+			display: block
+			width: 100%
+
+	.slick-arrow
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 0
+		border: none
+		background: transparent
+		width: 40px
+		height: 40px
+		border-top: 6px solid #1ee14b
+		border-left: 6px solid #1ee14b
+	.slick-prev
+		left: -130%
+		transform: rotate(-45deg)
+
+	.slick-next
+		right: 10%		
+		transform: rotate(135deg)

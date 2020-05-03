@@ -1,0 +1,74 @@
+.pavilion
+	&__info 
+		padding-bottom: 70px
+		&-item 
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center 
+		&-ico 
+			display: block
+			height: 110px
+			margin-bottom: 30px
+		&-title
+			color: #7dd956
+			+bold
+			font-size: 30px
+			text-align: center 
+			display: inline-block
+			width: 100%
+			padding-left: 5px
+			padding-right: 5px
+			max-width: 470px
+
+	&__gallery
+		width: calc(100% - 160px)
+		margin-left: auto
+		margin-right: auto
+		position: relative	
+		&-item
+			display: inline-block
+			position: relative
+			overflow: hidden
+			width: 570px
+			margin: 0 15px			
+			&::after
+				content: ''
+				display: block
+				width: 100%
+				padding-bottom: 75%
+			img 
+				display: block
+				position: absolute				
+				height: 100%
+				left: 50%
+				transform: translateX(-50%)
+		.slick-arrow
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			font-size: 0
+			border: none
+			background: transparent
+			width: 30px
+			height: 30px
+			border-top: 6px solid #1ee14b
+			border-left: 6px solid #1ee14b
+		.slick-prev
+			right: calc(100% + 10px)
+			transform: rotate(-45deg)
+
+		.slick-next
+			left: calc(100% + 10px)
+			transform: rotate(135deg)
+
+
+	&-order
+		padding: 42px 0
+		display: flex
+		justify-content: center
+		align-items: center 
+		.theme-btn
+			padding: 25px 60px
+			font-size: 42px
+			+os

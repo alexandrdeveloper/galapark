@@ -1,0 +1,122 @@
+header 
+	min-height: 100vh
+	width: 100%
+header,
+.cost__content,
+.orderform
+	background: url('../img/header/bg.jpg')
+	background-size: cover
+	background-position: center
+	position: relative
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 350px
+		height: 350px
+		background-image: url("../img/header/angle-down.png")
+		background-position: right bottom
+		background-repeat: no-repeat
+		transform: rotate(180deg)
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 350px
+		height: 350px
+		background-image: url("../img/header/angle-down.png")
+		background-position: right bottom
+		background-repeat: no-repeat
+
+.header 
+	&__contacts
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		align-items: flex-start 
+		padding: 50px 100px
+		padding-bottom: 18px
+		&-item
+			display: flex
+			flex-direction: row
+			margin-left: 40px
+		&-ico
+			width: 70px
+			margin-right: 25px
+			img 
+				display: block
+				width: 100%
+		&-info
+			width: 100%
+			max-width: 250px			
+			p,a.header__tel 
+				display: inline-block 
+				clear: both 
+				float: left 
+				color: #f9fbf8
+				+regular
+				font-size: 33px
+				font-weight: 400
+				padding-top: 0
+				margin-top: 0
+			.theme-btn
+				margin-top: 18px
+	&__content
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		padding-top: 100px
+		padding-bottom: 75px
+		&-box
+			width: 100%
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+	&__logo 
+		display: block
+		width: 40%
+		max-width: 800px
+		img 
+			display: block
+			width: 100%
+	&__description
+		+regular 
+		text-transform: uppercase
+		color: #7dd956
+		font-size: 46px
+		text-align: center
+		display: inline-block
+		width: 70%
+		max-width: 950px
+
+
+.menu
+	width: 90%
+	max-width: 1540px
+	margin-left: auto
+	margin-right: auto 
+	padding: 18px 10px 
+	background-color: rgba(0,0,0,.4)
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	margin-top: 0
+	.menu-item
+		display: inline-block 
+		a 
+			color: #7dd956
+			+bold
+			font-size: 33px
+			&:hover
+				text-decoration: underline
+
+
+		

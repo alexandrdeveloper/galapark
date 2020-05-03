@@ -1,0 +1,76 @@
+.services
+	padding: 70px 0
+	&__row
+		width: 80%
+		margin-left: auto
+		margin-right: auto
+	&__item 
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center 
+		text-align: center
+		img 
+			display: block
+			width: 170px 
+			margin-bottom: 20px
+	&__title
+		+bold 
+		color: #7dd956
+		font-size: 33px
+
+
+	&__cat
+		&-item
+			margin-bottom: 30px
+			&:nth-child(odd)
+				padding-left: 0
+				padding-right: 15px
+			&:nth-child(even)
+				padding-right: 0
+				padding-left: 15px
+			&-box
+				width: 100%
+				display: block
+				position: relative
+				overflow: hidden
+				&::after
+					content: ''
+					display: block
+					width: 100%
+					padding-top: 54%
+				img 
+					display: block
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%		
+				
+
+		&-title
+			position: absolute
+			left: 0
+			bottom: 0
+			right: 0
+			padding: 30px 
+			text-align: center
+			background-color: rgba(#020202, 0.5)
+			color: #fdfefd
+			+os
+			font-size: 50px
+			font-weight: 400
+			transition: .3s
+		
+		&-description
+			display: block
+			padding: 36px 90px
+			color: #030303
+			font-size: 25px
+			+bold 
+			text-align: center
+			padding-bottom: 100px
+
+
+.services__cat-item:hover
+	.services__cat-title
+		background-color: rgba(#020202, 0.9)

@@ -1,0 +1,65 @@
+* 
+	box-sizing: border-box
+
+body 
+	padding: 0
+	margin: 0
+	height: 100%
+	overflow-x: hidden 
+	+regular
+	&.no-scroll
+		overflow-y: hidden
+
+a 
+	text-decoration: none 
+
+ul, li 
+	list-style: none 
+
+button, input
+	outline: none 
+
+
+.section__header
+	padding: 60px 20px
+
+.section__title
+	display: block
+	width: 100%	
+	text-align: center
+	color: #020202
+	+bold
+	font-size: 50px
+	text-transform: uppercase 
+	margin: 0
+	position: relative
+	&_underline
+		padding-bottom: 35px
+		&::after
+			content: ''
+			display: block
+			width: 130px
+			height: 10px
+			background-color: #030303
+			position: absolute
+			top: 100%
+			left: 50%
+			transform: translateX(-50%)
+	&_underline-color
+		&::after 
+			background-color: #81e059
+	&_accent
+		color: #7dd956
+
+.section__description
+	+bold
+	color: #000000
+	font-size: 33px
+	font-weight: 700
+	display: inline-block
+	width: 90%
+	max-width: 1170px
+	margin: auto 
+	text-align: center 
+	margin-top: 32px
+	margin-bottom: 45px

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'FA-BR-400';  
+  src: url('../fonts/Font Awesome 5 Brands-Regular-400.otf') format('OpenType');
+}
+  
+@font-face {
+  font-family: 'FA-PL-300';  
+  src: url('../fonts/Font Awesome 5 Pro-Light-300.otf') format('OpenType');
+}
+  
+@font-face {
+   font-family: 'FA-PR-400';  
+  src: url('../fonts/Font Awesome 5 Pro-Regular-400.otf') format('OpenType');
+}
+ 
+@font-face {
+  font-family: 'FA-PS-900';  
+  src: url('../fonts/Font Awesome 5 Pro-Solid-900.otf') format('OpenType');
+}
+  
+@font-face{
+  font-family: 'FA';  
+  src: url('../fonts/FontAwesome.otf') format('OpenType');
+} 
+  
+
+@font-face {
+  font-family: 'Evolventa-Regular';
+  src: url('../fonts/Evolventa-Regular.otf');
+  src: url('../fonts/Evolventa-Regular.woff') format('woff'),
+  url('../fonts/Evolventa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Evolventa-Bold';
+  src: url('../fonts/Evolventa-Bold.otf');
+  src: url('../fonts/Evolventa-Bold.woff') format('woff'),
+  url('../fonts/Evolventa-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Condensed Bold';
+  src: url('../fonts/OpenSansCondensed-Bold.eot');
+  src: url('../fonts/OpenSansCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSansCondensed-Bold.woff') format('woff'),
+  url('../fonts/OpenSansCondensed-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@mixin regular{
+  font-family: 'Evolventa-Regular', sans-serif;
+}
+
+@mixin bold{
+  font-family: 'Evolventa-Bold', sans-serif;
+  font-weight: 700;
+}
+
+@mixin os{
+  font-family: 'Open Sans Condensed Bold', sans-serif;
+  font-weight: 700;
+}
+

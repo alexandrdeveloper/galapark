@@ -1,0 +1,86 @@
+.quest 
+	padding-bottom: 50px
+	&__content
+		justify-content: center
+		align-items: center
+	&__item
+		position: relative
+		width: 70%
+		max-width: 780px
+		&-box
+			width: 100%			
+			border: 14px solid #1dda48
+			border-radius: 14px
+			box-shadow: 0 20px 42px 28px rgba(0, 0, 0, 0.11), inset 0 20px 42px 8px rgba(0, 0, 0, 0.11)
+			background: transparent
+			position: relative
+			&::after
+				content: ''
+				display: block
+				padding-top: 100%
+			p 
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				padding: 80px
+				font-size: 33px
+				+bold 
+				color: #070707
+				text-align: center
+				padding-top: 15%
+		.fox,
+		.corp-quest 
+			position: absolute 
+			right: 85%
+			bottom: 20px
+			width: 100%
+			max-width: 660px
+			z-index: 4
+			img 
+				display: block
+				width: 100%
+		.corp-quest
+			z-index: 0
+			max-width: 800px
+			right: 70%
+
+
+	&__list
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 100%
+		display: flex
+		flex-direction: column 
+		justify-content: flex-start 
+		align-items: flex-start
+		width: 100%	
+		max-width: 324px
+		padding-top: 60px
+		padding-bottom: 60px
+		li 
+			+os 
+			font-size: 33px
+			color: #040404
+			display: block
+			width: inherit 
+			margin-left: 140px
+			position: relative
+			margin-bottom: 54px
+			&::before
+				content: ''
+				display: inline-block
+				position: absolute
+				right: 100%
+				width: 70px
+				height: 70px
+				background-image: url('../../img/quest/point.png')
+				background-size: 100%
+				background-position: center center 
+				background-repeat: no-repeat 
+				top: 50%
+				transform: translateY(-50%)
+				margin-right: 8px

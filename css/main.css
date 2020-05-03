@@ -1061,16 +1061,22 @@ header,
         color: #070707;
         text-align: center;
         padding-top: 15%; }
-    .quest__item .fox {
+    .quest__item .fox,
+    .quest__item .corp-quest {
       position: absolute;
       right: 85%;
-      bottom: 0;
+      bottom: 20px;
       width: 100%;
       max-width: 660px;
       z-index: 4; }
-      .quest__item .fox img {
+      .quest__item .fox img,
+      .quest__item .corp-quest img {
         display: block;
         width: 100%; }
+    .quest__item .corp-quest {
+      z-index: 0;
+      max-width: 800px;
+      right: 70%; }
   .quest__list {
     position: absolute;
     top: 0;
@@ -1085,40 +1091,44 @@ header,
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
-    max-width: 660px;
+    max-width: 324px;
     padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 36px; }
+    padding-bottom: 60px; }
     .quest__list li {
       font-family: 'Open Sans Condensed Bold', sans-serif;
       font-weight: 700;
       font-size: 33px;
       color: #040404;
       display: block;
-      width: inherit; }
+      width: inherit;
+      margin-left: 140px;
+      position: relative;
+      margin-bottom: 54px; }
       .quest__list li::before {
         content: '';
         display: inline-block;
+        position: absolute;
+        right: 100%;
         width: 70px;
         height: 70px;
         background-image: url("../../img/quest/point.png");
         background-size: 100%;
         background-position: center center;
         background-repeat: no-repeat;
-        position: relative;
-        top: 70%;
+        top: 50%;
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
-        margin-right: 15px; }
+        margin-right: 8px; }
 
 /** /.quest **/
 /** footer **/
