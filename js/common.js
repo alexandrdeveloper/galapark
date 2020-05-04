@@ -5,19 +5,18 @@ $(document).ready(function() {
 	});
 
 
-	$('.people__info-slider').slick({
+	$('.peopl2e__info-slider').slick({
 		autoplay: true,
 		slidesToShow: 1,
 		fade: true,
-		asNavFor: $('.people__image-carousel'),
+		asNavFor: $('.people__image'),
 	});
 
-	$('.people__image-carousel').slick({
+	$('.team-slider').slick({
 		autoplay: true,
 		slidesToShow: 1,
 		fade: true,
 		arrows: false,
-		asNavFor: $('.people__info-slider'),
 
 	});
 
