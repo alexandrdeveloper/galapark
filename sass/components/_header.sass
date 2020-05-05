@@ -34,13 +34,18 @@ header,
 		background-repeat: no-repeat
 
 .header 
+	&__top
+		padding-left: 115px
+		padding-right: 115px
 	&__contacts
 		width: 100%
+		margin-left: auto
+		margin-right: auto
 		display: flex
 		flex-direction: row
 		justify-content: flex-end
 		align-items: flex-start 
-		padding: 50px 100px
+		padding: 0px 100px
 		padding-bottom: 18px
 		&-item
 			display: flex
@@ -52,9 +57,9 @@ header,
 			img 
 				display: block
 				width: 100%
-		&-info
-			width: 100%
-			max-width: 250px			
+		&-info			
+			display: flex
+			flex-direction: column			
 			p,a.header__tel 
 				display: inline-block 
 				clear: both 
@@ -69,6 +74,7 @@ header,
 					text-decoration: underline
 			.theme-btn
 				margin-top: 18px
+				text-align: center
 	&__content
 		width: 100%
 		display: flex
@@ -101,7 +107,7 @@ header,
 
 
 .menu
-	width: 90%
+	width: 100%
 	max-width: 1540px
 	margin-left: auto
 	margin-right: auto 

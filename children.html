@@ -78,17 +78,17 @@
 		<section class="services">
 			<div class="container-fluid">
 				<div class="row services__row">
-					<a href="#popular-services" class="col-4 services__item">
+					<a href="#popular-services" class="col-4 services__item scroll">
 						<img src="img/services/1.png" alt="service-list-1">
 						<span class="services__title">Активные<br>развлечения</span>
 					</a>
 					<!-- /.col-md-4 services__item -->
-					<a href="#" class="col-4 services__item">
+					<a href="#pavilion" class="col-4 services__item scroll">
 						<img src="img/services/2.png" alt="service-list-2">
 						<span class="services__title">Беседки<br>для отдыха</span>
 					</a>
 					<!-- /.col-md-4 services__item -->
-					<a href="#" class="col-4 services__item">
+					<a href="#cost" class="col-4 services__item scroll">
 						<img src="img/services/3.png" alt="service-list-3">
 						<span class="services__title">Мероприятие<br>под ключ</span>
 					</a>
@@ -105,7 +105,7 @@
 			<div class="container-fluid">
 				<div class="row services__cat">
 					<div class="col-md-6 services__cat-item">
-						<a href="#" class="services__cat-item-box">
+						<a href="#cost" class="services__cat-item-box scroll">
 							<img src="img/children/cat/children-cat-1.jpg" alt="Children">
 							<div class="services__cat-title">
 								<span>ЛАЗЕРТАГ</span>
@@ -114,7 +114,7 @@
 					</div>
 					<!-- /.col-md-6 -->
 					<div class="col-md-6 services__cat-item">
-						<a href="#" class="services__cat-item-box">
+						<a href="#quest" class="services__cat-item-box scroll">
 							<img src="img/children/cat/children-cat-2.jpg" alt="Adult">
 							<div class="services__cat-title">
 								<span>ДЕТСКИЙ КВЕСТ «ХИТРЫЙ ЛИС»</span>
@@ -123,7 +123,7 @@
 					</div>
 					<!-- /.col-md-6 -->
 					<div class="col-md-6 services__cat-item">
-						<a href="#" class="services__cat-item-box">
+						<a href="#cost" class="services__cat-item-box scroll">
 							<img src="img/children/cat/children-cat-3.jpg" alt="Adult">
 							<div class="services__cat-title">
 								<span>ВЕРЕВОЧНЫЙ ПАРК</span>
@@ -132,7 +132,7 @@
 					</div>
 					<!-- /.col-md-6 -->
 					<div class="col-md-6 services__cat-item">
-						<a href="#" class="services__cat-item-box">
+						<a href="#pavilion" class="services__cat-item-box scroll">
 							<img src="img/children/cat/children-cat-4.jpg" alt="Adult">
 							<div class="services__cat-title">
 								<span>БЕСЕДКИ</span>
@@ -171,11 +171,11 @@
 						<div class="help__list">
 							<div class="help__list-box">
 								<img src="img/help/sun.png" alt="sun">
-								<a href="#" class="help__item help__item_first">Профессиональные <br>инструкторы-<br>аниматоры</a>
-								<a href="#" class="help__item help__item_second">Размещение <br>в беседках <br>с мангалом</a>
-								<a href="#" class="help__item help__item_third">Уникальные <br>развлечения <br>для детей</a>
-								<a href="#" class="help__item help__item_forth">Гарантия <br>безопасности <br>в парке </a>
-								<a href="#" class="help__item help__item_fifth">Именинник <br>играет от 6 чел <br>бесплатно</a>			
+								<a href="#people" class="help__item help__item_first scroll">Профессиональные <br>инструкторы-<br>аниматоры</a>
+								<a href="#pavilion" class="help__item help__item_second scroll">Размещение <br>в беседках <br>с мангалом</a>
+								<a href="#cost" class="help__item help__item_third scroll">Уникальные <br>развлечения <br>для детей</a>
+								<a href="#people" class="help__item help__item_forth scroll">Гарантия <br>безопасности <br>в парке </a>
+								<a href="#cost" class="help__item help__item_fifth scroll">Именинник <br>играет от 6 чел <br>бесплатно</a>			
 							</div>
 
 						</div>
@@ -185,7 +185,7 @@
 		</section>
 		<!-- /.help -->
 
-		<section class="quest">
+		<section class="quest" id="quest">
 			<div class="container">
 				<div class="row section__header">
 					<h2 class="section__title section__title_underline section__title_underline-color">
@@ -226,7 +226,7 @@
 		</section>
 		<!-- /.quest -->
 
-		<section class="cost">
+		<section class="cost" id="cost">
 			<div class="container-fluid">
 				<div class="row section__header" id="cost">
 					<h2 class="section__title section__title_underline section__title_underline-color">
@@ -312,7 +312,7 @@
 						<div class="cost__item">
 							<div class="cost__title cost__title_ico">
 								<img src="img/cost/vip.png" alt="vip">
-								<span>VIP ПАКЕТ</span>
+								<span>VIP<br>ПАКЕТ</span>
 							</div>
 							<div class="cost__info">
 								<ul class="cost__list">
@@ -404,7 +404,7 @@
 		</section>
 		<!-- /.childreorder -->
 
-		<section class="pavilion">
+		<section class="pavilion" id="pavilion">
 			<div class="container-fluid">
 				<div class="row section__header">
 					<h2 class="section__title section__title_underline section__title_underline-color">БЕСЕДКИ ДЛЯ ОТДЫХА</h2>
@@ -549,14 +549,14 @@
 						<input type="text" placeholder="Контактный номер">
 						<input type="number" placeholder="Количество участников">
 						<input type="number" placeholder="Сумма">
-						<button type="submit" class="theme-btn theme-btn_large theme-btn_booking modal-init">ЗАБРОНИРОВАТЬ</button>
+						<button type="submit" class="theme-btn theme-btn_large theme-btn_booking">ЗАБРОНИРОВАТЬ</button>
 					</form>
 				</div>
 			</div>
 		</section>
 		<!-- /.orderform -->
 
-		<section class="people">
+		<section class="people" id="people">
 			<div class="container-fluid">
 				<div class="row section__header">
 					<h2 class="section__title section__title_underline section__title_underline-color">ЛЮДИ, КОТОРЫЕ ОТВЕЧАЮТ ЗА КАЧЕСТВО ВАШЕГО ОТДЫХА</h2>
