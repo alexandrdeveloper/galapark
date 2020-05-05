@@ -16,48 +16,51 @@
 
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__contacts">
-				<div class="header__contacts-item header__contacts-address">
-					<div class="header__contacts-ico">
-						<img src="img/header/localisation.png" alt="localisation">
+			<div class="header__top">
+				<div class="header__contacts">
+					<div class="header__contacts-item header__contacts-address">
+						<div class="header__contacts-ico">
+							<img src="img/header/localisation.png" alt="localisation">
+						</div>
+						<!-- /.header__contacts-ico -->
+						<a href="#footer" class="header__contacts-info scroll">
+							<p>п. Колодищи,<br>8 км. от МКАД</p>
+						</a>
+						<!-- /.header__contacts-info -->
 					</div>
-					<!-- /.header__contacts-ico -->
-					<div class="header__contacts-info">
-						<p>п. Колодищи,<br>8 км. от МКАД</p>
-					</div>
-					<!-- /.header__contacts-info -->
-				</div>
-				<!-- /.header__contacts-item -->
-				<div class="header__contacts-item header__contacts-tel">
-					<div class="header__contacts-ico">
-						<img src="img/header/phone.png" alt="localisation">
-					</div>
-					<!-- /.header__contacts-ico -->
-					<div class="header__contacts-info">
-						<a class="header__tel" href="tel:+375295780346">+37529 5780346</a>
-						<a class="header__tel" href="tel:+375296410344">+37529 6410344</a>
-						<a href="#" class="theme-btn modal-init">ЗАКАЗАТЬ ЗВОНОК</a>						
-					</div>
+					<!-- /.header__contacts-item -->
+					<div class="header__contacts-item header__contacts-tel">
+						<div class="header__contacts-ico">
+							<img src="img/header/phone.png" alt="localisation">
+						</div>
+						<!-- /.header__contacts-ico -->
+						<div class="header__contacts-info">
+							<a class="header__tel" href="tel:+375295780346">+37529 5780346</a>
+							<a class="header__tel" href="tel:+375296410344">+37529 6410344</a>
+							<a href="#" class="theme-btn modal-init">ЗАКАЗАТЬ ЗВОНОК</a>						
+						</div>
 
-					<!-- /.header__contacts-info -->
+						<!-- /.header__contacts-info -->
+					</div>
+					<!-- /.header__contacts-item -->
 				</div>
-				<!-- /.header__contacts-item -->
-			</div>
-			<!-- /.header__contats -->
-			<div class="header__navbar">
-				<div class="row">
-					<ul class="menu">
-						<li class="menu-item"><a href="index.html">ГЛАВНАЯ</a></li>
-						<li class="menu-item menu-item_active"><a href="children.html">ДЛЯ ДЕТЕЙ</a></li>
-						<li class="menu-item"><a href="corporate.html">КОРПОРАТИВНЫЙ ОТДЫХ</a></li>
-						<li class="menu-item"><a href="#">ЦЕНЫ</a></li>
-						<li class="menu-item"><a href="#">БЕСЕДКИ</a></li>
-						<li class="menu-item"><a href="#">ОТЗЫВЫ</a></li>
-						<li class="menu-item"><a href="#">КАРТА</a></li>
-					</ul>
+				<!-- /.header__contats -->
+				<div class="header__navbar">
+					<button class="menu-init"><img src="img/burger.png" alt="Menu"></button>
+					<div class="row">
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">ГЛАВНАЯ</a></li>
+							<li class="menu-item"><a href="children.html">ДЛЯ ДЕТЕЙ</a></li>
+							<li class="menu-item menu-item_active"><a href="corporate.html">КОРПОРАТИВНЫЙ ОТДЫХ</a></li>
+							<li class="menu-item"><a href="#cost" class="scroll">ЦЕНЫ</a></li>
+							<li class="menu-item"><a href="#pavilion" class="scroll">БЕСЕДКИ</a></li>
+							<li class="menu-item"><a href="#feedback" class="scroll">ОТЗЫВЫ</a></li>
+							<li class="menu-item"><a href="#footer" class="scroll">КАРТА</a></li>
+						</ul>
+					</div>
 				</div>
+				<!-- /.header__navbar -->
 			</div>
-			<!-- /.header__navbar -->
 			<div class="header__content">
 				<div class="header__content-box">
 					<h1 class="header__logo logo">
@@ -75,24 +78,24 @@
 		<section class="services">
 			<div class="container-fluid">
 				<div class="row services__row">
-					<div class="col-md-4 services__item">
+					<a href="#popular-services" class="col-4 services__item">
 						<img src="img/services/1.png" alt="service-list-1">
 						<span class="services__title">Активные<br>развлечения</span>
-					</div>
+					</a>
 					<!-- /.col-md-4 services__item -->
-					<div class="col-md-4 services__item">
+					<a href="#" class="col-4 services__item">
 						<img src="img/services/2.png" alt="service-list-2">
 						<span class="services__title">Беседки<br>для отдыха</span>
-					</div>
+					</a>
 					<!-- /.col-md-4 services__item -->
-					<div class="col-md-4 services__item">
+					<a href="#" class="col-4 services__item">
 						<img src="img/services/3.png" alt="service-list-3">
 						<span class="services__title">Мероприятие<br>под ключ</span>
-					</div>
+					</a>
 					<!-- /.col-md-4 services__item -->
 				</div>
 				<!-- /.row -->
-				<div class="row section__header">
+				<div class="row section__header" id="popular-services">
 					<div class="col-md-12">
 						<h2 class="section__title">ПОПУЛЯРНЫЕ УСЛУГИ В GALA PARK</h2>
 					</div>
@@ -168,11 +171,11 @@
 						<div class="help__list">
 							<div class="help__list-box">
 								<img src="img/help/sun.png" alt="sun">
-								<a href="#" class="help__item help__item_first">Организация<br>активных<br>развлечений</a>
-								<a href="#" class="help__item help__item_second">Размещение<br>в беседках<br>с мангалом</a>
-								<a href="#" class="help__item help__item_third">Помощь в<br>организации<br>питания</a>
-								<a href="#" class="help__item help__item_forth">Организация<br>трансфера<br>в парк</a>
-								<a href="#" class="help__item help__item_fifth">Организация<br>фотосъемки и<br>многое другое</a>			
+								<a href="#" class="help__item help__item_first">Организация <br>активных <br>развлечений</a>
+								<a href="#" class="help__item help__item_second">Размещение <br>в беседках <br>с мангалом</a>
+								<a href="#" class="help__item help__item_third">Помощь в <br>организации <br>питания</a>
+								<a href="#" class="help__item help__item_forth">Организация <br>трансфера <br>в парк</a>
+								<a href="#" class="help__item help__item_fifth">Организация <br>фотосъемки и <br>многое другое</a>			
 							</div>
 
 						</div>
@@ -222,7 +225,7 @@
 
 		<section class="cost">
 			<div class="container-fluid">
-				<div class="row section__header">
+				<div class="row section__header" id="cost">
 					<h2 class="section__title section__title_underline section__title_underline-color">
 						СТОИМОСТЬ РАЗВЛЕЧЕНИЙ
 					</h2>
@@ -464,9 +467,9 @@
 							</ul>
 							<h3>КОНТАКТЫ</h3>
 							<ul>
-								<li>+375296983414 - Дмитрий</li>
-								<li>+375295093707 - Ирина</li>
-								<li>+375293190354 - Алексей</li>
+								<li><a href="tel:+375296983414">+375296983414</a> - Дмитрий</li>
+								<li><a href="tel:+375295093707">+375295093707</a> - Ирина</li>
+								<li><a href="tel:+375293190354">+375293190354</a> - Алексей</li>
 							</ul>
 							<a href="#" class="theme-btn theme-btn_large modal-init">ЗАКАЗАТЬ ДОСТАВКУ</a>
 						</div>
@@ -476,7 +479,7 @@
 			</div>
 		</section>
 
-		<section class="extra">
+		<section class="extra" id="extra">
 			<div class="container">
 				<div class="row section__header">
 					<h2 class="section__title section__title_underline section__title_underline-color">ДОПОЛНИТЕЛЬНО МОЖНО ЗАКАЗАТЬ</h2>
@@ -496,7 +499,7 @@
 							Вы можете заказать кейтеринг у наших партнеров.
 							Это профессионалы своего дела, которые смогут
 							угодить всем вашим пожеланиям и приготовить
-							самые вкусные блюда.<br><br>+375 (29) 667-02-20 Вадим proficatering.by
+							самые вкусные блюда.<br><br><a href="tel:375296670220">+375 (29) 667-02-20</a> Вадим <a href="proficatering.by">proficatering.by</a>
 						</p>
 					</div>
 					<!-- /.col-md-6 -->
@@ -513,7 +516,7 @@
 							можно воспользоваться услугами
 							профессионального фотографа.<br><br>
 
-							+375 (29) 667-02-20 Игорь
+							<a href="tel:+375296670220">+375 (29) 667-02-20</a> Игорь
 						</p>
 					</div>
 					<!-- /.col-md-6 -->
@@ -551,8 +554,8 @@
 				<div class="team-slider">
 					<div class="row people__content">
 						<div class="col-md-7 people__image">						
-							<img src="img/people/spasuk.jpg" alt="Spasuk">
-							
+							<img class="desktop-img" src="img/people/spasuk.jpg" alt="Spasuk">
+							<img class="mobile-img" src="img/people/spasuk-mob.jpg" alt="Spasuk">
 							
 							
 						</div>
@@ -566,48 +569,13 @@
 							</div>							
 						</div>							
 					</div>
-
-					<div class="row people__content">
-						<div class="col-md-7 people__image">	
-							<img src="img/people/yaroshko.jpg" alt="Yaroshko">
-							
-							
-						</div>
-						<div class="col-md-5 people__info-slider">
-							
-							<div class="people__info-item">
-								<h3 class="people__name">Ярошко Эдуард Михайлович</h3>
-								<a href="https://vk.com/shanoby1992" class="people__link">https://vk.com/shanoby1992</a>
-								<p class="people__info">Специализация: Инструктор<br>
-								Место работы: Лазертаг, пейнтбол и квесты<br>
-								Опыт работы: 5,5 лет<br></p>
-							</div>
-							
-							
-						</div>
-					</div>
-					<div class="row people__content">
-						<div class="col-md-7 people__image">	
-							<img src="img/people/kosyh.png" alt="kosyh">
-							
-						</div>
-						<div class="col-md-5 people__info-slider">							
-							<div class="people__info-item">
-								<h3 class="people__name">Косых Артем Александрович</h3>
-								<a href="https://vk.com/v_dushe_ya_belochka" class="people__link">https://vk.com/id183665709</a>
-								<p class="people__info">Специализация: Инструктор<br>
-								Место работы: Лазертаг, пейнтбол и квесты<br>
-								Опыт работы: 7 лет<br></p>
-							</div>							
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
 		<!-- /.people -->
 		
 
-		<section class="feedback">
+		<section class="feedback" id="feedback">
 			<div class="container">
 				<div class="row section__header">
 					<h2 class="section__title section__title_underline section__title_underline-color">ОТЗЫВЫ</h2>					
@@ -708,10 +676,10 @@
 		</section>
 		<!-- /.portfolio -->
 
-		<footer>
+		<footer id="footer">
 			<div class="container-fluid">
 				<div class="row section__header">
-					<h2 class="section__title section__title_underline section__title_underline-color">КАК МЫ ПРОВОДИМ ВРЕМЯ В GALAPARK</h2>					
+					<h2 class="section__title section__title_underline section__title_underline-color">НАШЕ МЕСТОПОЛОЖЕНИЕ</h2>					
 				</div>
 				<div class="row">
 					<div class="footer__map">

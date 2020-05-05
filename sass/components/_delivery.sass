@@ -2,16 +2,26 @@
 .people 
 	&__image
 		position: relative
-		height: 794px
+		height: 100%		
 		img 
 			display: block
-			position: relative
-			top: 0
-			left: -160px			
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 0			
 			bottom: 0
-			width: 120%
+			height: 80%
+			left: -50px
+		&::after
+			content: ''
+			display: block
+			width: 100%
+			padding-top: 90%
 	&__info 
-		padding: 93px 85px
+		padding: 10px 85px
+		display: flex
+		justify-content: center
+		align-items: center
 		h3 
 			text-transform: uppercase
 			color: #7dd956
@@ -38,27 +48,77 @@
 				margin-right: 10px
 				position: relative
 				top: -7px
+			a 
+				color: inherit 
+				&:hover
+					text-decoration: underline
 
-				 
+.team-slider
+	width: 100%	
+	outline: none
+	.slick-arrow
+		position: absolute
+		top: 50%
+		font-size: 0
+		border: none
+		background: transparent
+		width: 40px
+		height: 40px
+		border-top: 6px solid #1ee14b
+		border-left: 6px solid #1ee14b
+	.slick-prev
+		left: 2%
+		transform: translateY(-50%) rotate(-45deg)
+		z-index: 10 
+
+	.slick-next
+		right: 2%		
+		transform: translateY(-50%) rotate(135deg)			 
 .people
+	
+
 	position: relative
+	.container-fluid
+		padding-left: 0
+		padding-right: 0
+		outline: none
+	&__content
+		display: flex
+		flex-direction: row
+		align-items: center
+		position: relative
 	&__info-slider
-		padding-top: 160px
-		padding-bottom: 160px
+		padding-top: 20px
+		padding-bottom: 20px		
 		padding-left: 45px
-		padding-right: 45px
+		padding-right: 45px				
+		display: flex
+		justify-content: center
+		align-items: center
+		outline: none
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+
 	&__info-item
 		display: flex
 		flex-direction: column
-		justify-content: space-between
+		justify-content: center
 		align-items: center
 		text-align: center
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		
 	h3.people__name
 		font-size: 50px
 		color: #070707
 		+os 
 		display: inline-block
-		margin-bottom: 100px
+		margin-bottom: 12%
+		margin-top: 0
 	&__link
 		+os 
 		font-size: 25px
@@ -72,30 +132,23 @@
 		color: #070707
 	&__image
 		position: relative
-
-	&__image-carousel
-		position: relative
-		width: 120%
-		transform: translateX(-120px)
-
+		float: left		
 		img 
 			display: block
-			width: 100%
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 0			
+			bottom: 0
+			height: 80%
+			left: -4%
+		//&::after
+			//content: ''
+			//display: block
+			//width: 100%
+			//padding-top: 90%
 
-	.slick-arrow
-		position: absolute
-		top: 50%
-		font-size: 0
-		border: none
-		background: transparent
-		width: 40px
-		height: 40px
-		border-top: 6px solid #1ee14b
-		border-left: 6px solid #1ee14b
-	.slick-prev
-		left: -130%
-		transform: translateY(-50%) rotate(-45deg) 
+	&__image-carousel
+		
 
-	.slick-next
-		right: 10%		
-		transform: translateY(-50%) rotate(135deg) 
+	 

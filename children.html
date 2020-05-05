@@ -16,48 +16,51 @@
 
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__contacts">
-				<div class="header__contacts-item header__contacts-address">
-					<div class="header__contacts-ico">
-						<img src="img/header/localisation.png" alt="localisation">
+			<div class="header__top">
+				<div class="header__contacts">
+					<div class="header__contacts-item header__contacts-address">
+						<div class="header__contacts-ico">
+							<img src="img/header/localisation.png" alt="localisation">
+						</div>
+						<!-- /.header__contacts-ico -->
+						<a href="#footer" class="header__contacts-info scroll">
+							<p>п. Колодищи,<br>8 км. от МКАД</p>
+						</a>
+						<!-- /.header__contacts-info -->
 					</div>
-					<!-- /.header__contacts-ico -->
-					<div class="header__contacts-info">
-						<p>п. Колодищи,<br>8 км. от МКАД</p>
-					</div>
-					<!-- /.header__contacts-info -->
-				</div>
-				<!-- /.header__contacts-item -->
-				<div class="header__contacts-item header__contacts-tel">
-					<div class="header__contacts-ico">
-						<img src="img/header/phone.png" alt="localisation">
-					</div>
-					<!-- /.header__contacts-ico -->
-					<div class="header__contacts-info">
-						<a class="header__tel" href="tel:+375295780346">+37529 5780346</a>
-						<a class="header__tel" href="tel:+375296410344">+37529 6410344</a>
-						<a href="#" class="theme-btn modal-init">ЗАКАЗАТЬ ЗВОНОК</a>						
-					</div>
+					<!-- /.header__contacts-item -->
+					<div class="header__contacts-item header__contacts-tel">
+						<div class="header__contacts-ico">
+							<img src="img/header/phone.png" alt="localisation">
+						</div>
+						<!-- /.header__contacts-ico -->
+						<div class="header__contacts-info">
+							<a class="header__tel" href="tel:+375295780346">+37529 5780346</a>
+							<a class="header__tel" href="tel:+375296410344">+37529 6410344</a>
+							<a href="#" class="theme-btn modal-init">ЗАКАЗАТЬ ЗВОНОК</a>						
+						</div>
 
-					<!-- /.header__contacts-info -->
+						<!-- /.header__contacts-info -->
+					</div>
+					<!-- /.header__contacts-item -->
 				</div>
-				<!-- /.header__contacts-item -->
-			</div>
-			<!-- /.header__contats -->
-			<div class="header__navbar">
-				<div class="row">
-					<ul class="menu">
-						<li class="menu-item"><a href="index.html">ГЛАВНАЯ</a></li>
-						<li class="menu-item menu-item_active"><a href="#">ДЛЯ ДЕТЕЙ</a></li>
-						<li class="menu-item"><a href="corporate.html">КОРПОРАТИВНЫЙ ОТДЫХ</a></li>
-						<li class="menu-item"><a href="#">ЦЕНЫ</a></li>
-						<li class="menu-item"><a href="#">БЕСЕДКИ</a></li>
-						<li class="menu-item"><a href="#">ОТЗЫВЫ</a></li>
-						<li class="menu-item"><a href="#">КАРТА</a></li>
-					</ul>
+				<!-- /.header__contats -->
+				<div class="header__navbar">
+					<button class="menu-init"><img src="img/burger.png" alt="Menu"></button>
+					<div class="row">
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">ГЛАВНАЯ</a></li>
+							<li class="menu-item menu-item_active"><a href="children.html">ДЛЯ ДЕТЕЙ</a></li>
+							<li class="menu-item"><a href="corporate.html">КОРПОРАТИВНЫЙ ОТДЫХ</a></li>
+							<li class="menu-item"><a href="#cost" class="scroll">ЦЕНЫ</a></li>
+							<li class="menu-item"><a href="#pavilion" class="scroll">БЕСЕДКИ</a></li>
+							<li class="menu-item"><a href="#feedback" class="scroll">ОТЗЫВЫ</a></li>
+							<li class="menu-item"><a href="#footer" class="scroll">КАРТА</a></li>
+						</ul>
+					</div>
 				</div>
+				<!-- /.header__navbar -->
 			</div>
-			<!-- /.header__navbar -->
 			<div class="header__content">
 				<div class="header__content-box">
 					<h1 class="header__logo logo">
@@ -75,24 +78,24 @@
 		<section class="services">
 			<div class="container-fluid">
 				<div class="row services__row">
-					<div class="col-md-4 services__item">
+					<a href="#popular-services" class="col-4 services__item">
 						<img src="img/services/1.png" alt="service-list-1">
 						<span class="services__title">Активные<br>развлечения</span>
-					</div>
+					</a>
 					<!-- /.col-md-4 services__item -->
-					<div class="col-md-4 services__item">
+					<a href="#" class="col-4 services__item">
 						<img src="img/services/2.png" alt="service-list-2">
 						<span class="services__title">Беседки<br>для отдыха</span>
-					</div>
+					</a>
 					<!-- /.col-md-4 services__item -->
-					<div class="col-md-4 services__item">
+					<a href="#" class="col-4 services__item">
 						<img src="img/services/3.png" alt="service-list-3">
 						<span class="services__title">Мероприятие<br>под ключ</span>
-					</div>
+					</a>
 					<!-- /.col-md-4 services__item -->
 				</div>
 				<!-- /.row -->
-				<div class="row section__header">
+				<div class="row section__header" id="popular-services">
 					<div class="col-md-12">
 						<h2 class="section__title">ПОПУЛЯРНЫЕ УСЛУГИ В GALA PARK</h2>
 					</div>
@@ -150,7 +153,7 @@
 					<div class="col-md-12 freedate__content">
 						<p class="freedate__description">Узнайте свободную дату и время игры<br>со скидкой до</p>
 						<span class="accent">30%</span>
-						<a href="#" class="theme-btn theme-btn_large modal-init">ЗАБРОНИРОВАТЬ</a>
+						<a href="#" class="theme-btn theme-btn_large theme-btn_booking modal-init">ЗАБРОНИРОВАТЬ</a>
 					</div>
 				</div>
 			</div>
@@ -168,11 +171,11 @@
 						<div class="help__list">
 							<div class="help__list-box">
 								<img src="img/help/sun.png" alt="sun">
-								<a href="#" class="help__item help__item_first">Профессиональные<bR>инструкторы-<br>аниматоры</a>
-								<a href="#" class="help__item help__item_second">Размещение<br>в беседках<br>с мангалом</a>
-								<a href="#" class="help__item help__item_third">Уникальные<br>развлечения<br>для детей</a>
-								<a href="#" class="help__item help__item_forth">Гарантия<br>безопасности<br>в парке</a>
-								<a href="#" class="help__item help__item_fifth">Именинник<br>играет от 6 чел<br>бесплатно</a>			
+								<a href="#" class="help__item help__item_first">Профессиональные <br>инструкторы-<br>аниматоры</a>
+								<a href="#" class="help__item help__item_second">Размещение <br>в беседках <br>с мангалом</a>
+								<a href="#" class="help__item help__item_third">Уникальные <br>развлечения <br>для детей</a>
+								<a href="#" class="help__item help__item_forth">Гарантия <br>безопасности <br>в парке </a>
+								<a href="#" class="help__item help__item_fifth">Именинник <br>играет от 6 чел <br>бесплатно</a>			
 							</div>
 
 						</div>
@@ -225,7 +228,7 @@
 
 		<section class="cost">
 			<div class="container-fluid">
-				<div class="row section__header">
+				<div class="row section__header" id="cost">
 					<h2 class="section__title section__title_underline section__title_underline-color">
 						СТОИМОСТЬ РАЗВЛЕЧЕНИЙ
 					</h2>
@@ -446,7 +449,7 @@
 					</div>
 				</div>
 				<div class="row pavilion-order">
-					<div class="theme-btn theme-btn_large modal-init">ЗАБРОНИРОВАТЬ</div>
+					<div class="theme-btn theme-btn_large theme-btn_booking modal-init">ЗАБРОНИРОВАТЬ</div>
 				</div>
 			</div>
 		</section>
@@ -459,10 +462,11 @@
 					<p class="section__description">Если вы хотите полностью расслабиться и ни о чем не беспокоиться, мы можем организовать для вас доставку</p>
 				</div>
 				<div class="row delivery__content">
-					<div class="col-md-7 delivery__image">
-						<img src="img/delivery/bus.jpg" alt="Bus">
+					<div class="col-sm-7 delivery__image">
+						<img class="desktop-img" src="img/delivery/bus.jpg" alt="Bus">
+						<img class="mobile-img" src="img/delivery/bus-mobile.jpg" alt="Bus">
 					</div>
-					<div class="col-md-5 delivery__info">
+					<div class="col-sm-5 delivery__info">
 						<div class="delivery__info-box">
 							<ul>
 								<li>Комфортные микроавтобусы вместительностью до 16 человек</li>
@@ -474,9 +478,9 @@
 							</ul>
 							<h3>КОНТАКТЫ</h3>
 							<ul>
-								<li>+375296983414 - Дмитрий</li>
-								<li>+375295093707 - Ирина</li>
-								<li>+375293190354 - Алексей</li>
+								<li><a href="tel:+375296983414">+375296983414</a> - Дмитрий</li>
+								<li><a href="tel:+375295093707">+375295093707</a> - Ирина</li>
+								<li><a href="tel:+375293190354">+375293190354</a> - Алексей</li>
 							</ul>
 							<a href="#" class="theme-btn theme-btn_large modal-init">ЗАКАЗАТЬ ДОСТАВКУ</a>
 						</div>
@@ -486,7 +490,7 @@
 			</div>
 		</section>
 
-		<section class="extra">
+		<section class="extra" id="extra">
 			<div class="container">
 				<div class="row section__header">
 					<h2 class="section__title section__title_underline section__title_underline-color">ДОПОЛНИТЕЛЬНО МОЖНО ЗАКАЗАТЬ</h2>
@@ -506,7 +510,7 @@
 							Вы можете заказать кейтеринг у наших партнеров.
 							Это профессионалы своего дела, которые смогут
 							угодить всем вашим пожеланиям и приготовить
-							самые вкусные блюда.<br><br>+375 (29) 667-02-20 Вадим proficatering.by
+							самые вкусные блюда.<br><br><a href="tel:375296670220">+375 (29) 667-02-20</a> Вадим <a href="proficatering.by">proficatering.by</a>
 						</p>
 					</div>
 					<!-- /.col-md-6 -->
@@ -523,7 +527,7 @@
 							можно воспользоваться услугами
 							профессионального фотографа.<br><br>
 
-							+375 (29) 667-02-20 Игорь
+							<a href="tel:+375296670220">+375 (29) 667-02-20</a> Игорь
 						</p>
 					</div>
 					<!-- /.col-md-6 -->
@@ -545,7 +549,7 @@
 						<input type="text" placeholder="Контактный номер">
 						<input type="number" placeholder="Количество участников">
 						<input type="number" placeholder="Сумма">
-						<button type="submit" class="theme-btn theme-btn_large modal-init">ЗАБРОНИРОВАТЬ</button>
+						<button type="submit" class="theme-btn theme-btn_large theme-btn_booking modal-init">ЗАБРОНИРОВАТЬ</button>
 					</form>
 				</div>
 			</div>
@@ -560,13 +564,13 @@
 				</div>
 				<div class="team-slider">
 					<div class="row people__content">
-						<div class="col-md-7 people__image">						
-							<img src="img/people/spasuk.jpg" alt="Spasuk">
-							
+						<div class="col-sm-7 people__image">						
+							<img class="desktop-img" src="img/people/spasuk.jpg" alt="Spasuk">
+							<img class="mobile-img" src="img/people/spasuk-mob.jpg" alt="Spasuk">
 							
 							
 						</div>
-						<div class=" col-md-5 people__info-slider">
+						<div class=" col-sm-5 people__info-slider">
 							<div class="people__info-item">
 								<h3 class="people__name">Спасюк Вероника Дмитриевна</h3>
 								<a href="https://vk.com/v_dushe_ya_belochka" class="people__link">https://vk.com/v_dushe_ya_belochka</a>
@@ -576,40 +580,22 @@
 							</div>							
 						</div>							
 					</div>
-
 					<div class="row people__content">
-						<div class="col-md-7 people__image">	
-							<img src="img/people/yaroshko.jpg" alt="Yaroshko">
+						<div class="col-sm-7 people__image">						
+							<img class="desktop-img" src="img/people/spasuk.jpg" alt="Spasuk">
+							<img class="mobile-img" src="img/people/spasuk-mob.jpg" alt="Spasuk">
 							
 							
 						</div>
-						<div class="col-md-5 people__info-slider">
-							
+						<div class=" col-sm-5 people__info-slider">
 							<div class="people__info-item">
-								<h3 class="people__name">Ярошко Эдуард Михайлович</h3>
-								<a href="https://vk.com/shanoby1992" class="people__link">https://vk.com/shanoby1992</a>
-								<p class="people__info">Специализация: Инструктор<br>
-								Место работы: Лазертаг, пейнтбол и квесты<br>
-								Опыт работы: 5,5 лет<br></p>
-							</div>
-							
-							
-						</div>
-					</div>
-					<div class="row people__content">
-						<div class="col-md-7 people__image">	
-							<img src="img/people/kosyh.png" alt="kosyh">
-							
-						</div>
-						<div class="col-md-5 people__info-slider">							
-							<div class="people__info-item">
-								<h3 class="people__name">Косых Артем Александрович</h3>
-								<a href="https://vk.com/v_dushe_ya_belochka" class="people__link">https://vk.com/id183665709</a>
+								<h3 class="people__name">Спасюк Вероника Дмитриевна</h3>
+								<a href="https://vk.com/v_dushe_ya_belochka" class="people__link">https://vk.com/v_dushe_ya_belochka</a>
 								<p class="people__info">Специализация: Инструктор<br>
 								Место работы: Лазертаг, пейнтбол и квесты<br>
 								Опыт работы: 7 лет<br></p>
 							</div>							
-						</div>
+						</div>							
 					</div>
 				</div>
 			</div>
@@ -617,7 +603,7 @@
 		<!-- /.people -->
 		
 
-		<section class="feedback">
+		<section class="feedback" id="feedback">
 			<div class="container">
 				<div class="row section__header">
 					<h2 class="section__title section__title_underline section__title_underline-color">ОТЗЫВЫ</h2>					
@@ -639,73 +625,73 @@
 				</div>
 				<!-- /.row -->
 				<div class="row portfolio__content">
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/1.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/1.jpg" alt="Slide-1">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/2.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/2.jpg" alt="Slide-2">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/3.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/3.jpg" alt="Slide-3">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/4.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/4.jpg" alt="Slide-4">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/5.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/5.jpg" alt="Slide-5">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/6.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/6.jpg" alt="Slide-6">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/7.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/7.jpg" alt="Slide-7">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/8.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/8.jpg" alt="Slide-8">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/9.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/9.jpg" alt="Slide-9">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/10.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/10.jpg" alt="Slide-10">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/11.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/11.jpg" alt="Slide-11">
 						</a>
 					</div>
 					<!-- /.col-md-3 portfolio__item -->
-					<div class="col-md-3 portfolio__item">
+					<div class="col-md-3 col-sm-4 col-6 portfolio__item">
 						<a href="img/portfolio/12.jpg" class="portfolio__item-box">
 							<img src="img/portfolio/12.jpg" alt="Slide-12">
 						</a>
@@ -718,10 +704,10 @@
 		</section>
 		<!-- /.portfolio -->
 
-		<footer>
+		<footer id="footer">
 			<div class="container-fluid">
 				<div class="row section__header">
-					<h2 class="section__title section__title_underline section__title_underline-color">КАК МЫ ПРОВОДИМ ВРЕМЯ В GALAPARK</h2>					
+					<h2 class="section__title section__title_underline section__title_underline-color">НАШЕ МЕСТОПОЛОЖЕНИЕ</h2>					
 				</div>
 				<div class="row">
 					<div class="footer__map">

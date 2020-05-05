@@ -10,10 +10,14 @@
 		justify-content: flex-start
 		align-items: center 
 		text-align: center
+		transition: .3s
+		cursor: pointer
 		img 
 			display: block
 			width: 170px 
 			margin-bottom: 20px
+		&:hover
+			transform: scale(1.1)
 	&__title
 		+bold 
 		color: #7dd956
@@ -22,13 +26,14 @@
 
 	&__cat
 		&-item
-			margin-bottom: 30px
+			margin-bottom: 10px
+			transition: .3s
 			&:nth-child(odd)
 				padding-left: 0
-				padding-right: 15px
+				padding-right: 5px
 			&:nth-child(even)
 				padding-right: 0
-				padding-left: 15px
+				padding-left: 5px
 			&-box
 				width: 100%
 				display: block
@@ -39,12 +44,27 @@
 					display: block
 					width: 100%
 					padding-top: 54%
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					z-index: 10
+					background-color: rgba(#000, .8)
+					transition: .3s
+					opacity: 0
 				img 
 					display: block
 					position: absolute
 					top: 0
 					left: 0
 					width: 100%		
+				&:hover 
+					&::before
+						opacity: 1
 				
 
 		&-title
@@ -60,6 +80,7 @@
 			font-size: 50px
 			font-weight: 400
 			transition: .3s
+			z-index: 12
 		
 		&-description
 			display: block
@@ -69,8 +90,13 @@
 			+bold 
 			text-align: center
 			padding-bottom: 100px
+			a 
+				color: inherit
+				&:hover
+					text-decoration: underline
 
 
-.services__cat-item:hover
+
+.services__cat-item-box:hover
 	.services__cat-title
-		background-color: rgba(#020202, 0.9)
+		background-color: rgba(#020202, 0)

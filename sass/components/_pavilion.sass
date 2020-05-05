@@ -43,10 +43,25 @@
 				height: 100%
 				left: 50%
 				transform: translateX(-50%)
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background-color: rgba(0,0,0,.4)
+				opacity: 0
+				transition: .3s
+				z-index: 2
+			&:hover
+				&::before
+					opacity: 1
+
 		.slick-arrow
 			position: absolute
-			top: 50%
-			transform: translateY(-50%)
+			top: 50% 
 			font-size: 0
 			border: none
 			background: transparent
@@ -56,19 +71,16 @@
 			border-left: 6px solid #1ee14b
 		.slick-prev
 			right: calc(100% + 10px)
-			transform: rotate(-45deg)
+			transform: translateY(-50%) rotate(-45deg)
 
 		.slick-next
 			left: calc(100% + 10px)
-			transform: rotate(135deg)
+			transform: translateY(-50%) rotate(135deg)
 
 
 	&-order
 		padding: 42px 0
 		display: flex
 		justify-content: center
-		align-items: center 
-		.theme-btn
-			padding: 25px 60px
-			font-size: 42px
-			+os
+		align-items: center
+		
