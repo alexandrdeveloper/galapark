@@ -2430,4 +2430,11 @@ header,
   .modal__window .modal-close {
     width: 18px; }
   .orderform__form input {
-    width: 90%; } }
+    width: 90%; }
+  .services__row {
+    width: 100%; }
+  .services__item img {
+    width: 40px;
+    margin-bottom: 6px; }
+  .services__title {
+    font-size: 12px; } }
