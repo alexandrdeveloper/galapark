@@ -204,6 +204,8 @@ header,
     .header__contacts-ico img {
       display: block;
       width: 100%; }
+    .header__contacts-ico_loc {
+      width: 65px; }
   .header__contacts-info {
     display: -webkit-box;
     display: -webkit-flex;
@@ -636,7 +638,7 @@ header,
   text-align: center;
   width: 200px;
   height: 200px;
-  background-color: #1ee14b;
+  background-color: #81e059;
   z-index: 3;
   border-radius: 50%;
   display: -webkit-box;
@@ -895,7 +897,7 @@ header,
     right: 0;
     bottom: 0;
     height: 80%;
-    left: -50px; }
+    left: -9%; }
   .delivery__image::after,
   .people__image::after {
     content: '';
@@ -958,6 +960,10 @@ header,
       .people__info li a:hover {
         text-decoration: underline; }
 
+.delivery__content {
+  margin-top: -60px;
+  margin-bottom: -60px; }
+
 .team-slider {
   width: 100%;
   outline: none; }
@@ -987,8 +993,9 @@ header,
   position: relative; }
   .people .container-fluid {
     padding-left: 0;
-    padding-right: 0;
-    outline: none; }
+    padding-right: 0; }
+    .people .container-fluid .row {
+      width: 100%; }
   .people__content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1023,7 +1030,7 @@ header,
             align-items: center;
     outline: none;
     position: absolute;
-    right: 0;
+    right: 12%;
     top: 0;
     bottom: 0; }
   .people__info-item {
@@ -1083,7 +1090,7 @@ header,
       right: 0;
       bottom: 0;
       height: 80%;
-      left: -4%; }
+      left: -7%; }
 
 /** /.Delivery **/
 /** Orderform **/
@@ -1283,7 +1290,9 @@ header,
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     max-width: 324px;
     padding-top: 60px;
     padding-bottom: 60px; }
@@ -1466,7 +1475,8 @@ header,
   font-weight: 400;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  text-align: center; }
   .theme-btn_large {
     padding: 25px 25px;
     font-size: 32px; }
@@ -1478,6 +1488,34 @@ header,
     font-size: 50px;
     line-height: 1;
     padding: 22px 38px; }
+
+.up-scroll {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px 0 0 10px;
+  background-color: #81e059;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 30; }
+  .up-scroll i {
+    font-size: 2.6rem;
+    color: #fff;
+    font-family: 'FA-PL-300'; }
 
 @media screen and (max-width: 2559px) {
   .header__contacts-info p, .header__contacts-info a.header__tel {
@@ -1569,13 +1607,15 @@ header,
     height: 90px; }
   .section__title_underline {
     padding-bottom: 22px; }
+  .delivery__content {
+    margin-top: -150px; }
   .delivery__info {
     padding-left: 0; }
   .delivery__info ul, .people__info ul {
     margin-bottom: 26px;
     padding-left: 0; }
   .delivery__image img {
-    left: -6%; }
+    left: -7%; }
   .delivery__info li, .people__info li {
     font-size: 20px; }
   .people__info {
@@ -1617,7 +1657,13 @@ header,
   .header__contacts-info p, .header__contacts-info a.header__tel {
     font-size: 20px; }
   .header__contacts-ico {
-    width: 50px; }
+    width: 40px; }
+  .header__contacts-ico_loc {
+    width: 35px; }
+  .header__contacts-ico_tel {
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px); }
   .menu {
     padding: 12px;
     margin-bottom: 0; }
@@ -1699,6 +1745,8 @@ header,
     font-size: 18px; }
   .section__description {
     width: 60%; }
+  .delivery__content {
+    margin-top: -80px; }
   .delivery__info ul, .people__info ul {
     margin-bottom: 18px; }
   .delivery__image img {
@@ -1795,7 +1843,8 @@ header,
     padding: 0; }
     .header__content-box {
       height: 100vh;
-      min-height: 700px;
+      min-height: 400px;
+      padding-top: 131px;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
@@ -2021,16 +2070,23 @@ header,
     max-width: -350px; }
   .childreorder__form {
     max-width: 350px; }
+  .delivery__content {
+    margin-top: 0;
+    margin-bottom: 0; }
   .pavilion__info-ico {
     height: 48px;
     margin-bottom: 10px; }
+  .delivery__info {
+    padding-left: 20px;
+    padding-right: 20px; }
   .delivery__info li::before, .people__info li::before {
     height: 4px;
     width: 4px; }
   .delivery__info ul, .people__info ul {
     margin-top: 0; }
   .delivery__image img {
-    height: 110%; }
+    height: 120%;
+    left: -25%; }
   .services__cat-description {
     padding: 20px 25px;
     font-size: 12px; }
@@ -2055,7 +2111,7 @@ header,
   .people__image img {
     height: 90%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header {
     height: auto; }
   .header__contacts {
@@ -2338,20 +2394,52 @@ header,
   .cost__total-item span {
     font-size: 18px; }
   .pavilion__info-item {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
   .pavilion__info-title {
     width: 100%;
     max-width: 230px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
     font-size: 22px; }
+  .pavilion__gallery-item {
+    margin: 0; }
+  .pavilion__gallery .slick-prev {
+    left: -22px;
+    right: auto;
+    z-index: 8; }
+  .pavilion__gallery .slick-next {
+    right: -22px;
+    left: auto;
+    z-index: 8; }
+  .pavilion__info-ico {
+    width: 40px;
+    height: auto;
+    margin-right: 10px; }
   .quest__item p {
     padding: 2px;
     font-size: 16px;
     margin: 0; }
   .quest__list li {
     font-size: 22px;
-    margin-left: 0; }
+    margin-left: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
   .feedback__window {
     width: 100%; }
   .people h3.people__name {
@@ -2376,19 +2464,8 @@ header,
   .people .section__header {
     padding-bottom: 20px; }
   .pavilion__gallery {
-    width: 100%; }
-  .pavilion__gallery-item {
-    margin: 0; }
-  .pavilion__gallery .slick-prev {
-    left: 10px;
-    right: auto;
-    z-index: 8; }
-  .pavilion__gallery .slick-next {
-    right: 10px;
-    left: auto;
-    z-index: 8; }
-  .pavilion__info-ico {
-    height: 70px; }
+    width: -webkit-calc(100% - 64px);
+    width: calc(100% - 64px); }
   .pavilion-order .theme-btn,
   .theme-btn_large {
     font-size: 26px; }
@@ -2411,13 +2488,39 @@ header,
   .modal__window input {
     font-size: 22px; }
   .modal__window .theme-btn {
-    font-size: 24px; } }
-
-@media screen and (max-width: 567px) {
+    font-size: 24px; }
   .desktop-img {
     display: none !important; }
   .mobile-img {
     display: block !important; }
+  .delivery__image img {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: auto; }
+  .delivery__info-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px; }
+    .delivery__info-box p, .delivery__info-box ul {
+      width: 100%; }
   .people__image {
     width: 100%;
     overflow: hidden; }
@@ -2447,13 +2550,23 @@ header,
     border: 2px solid #7dd956; }
   .people h3.people__name {
     margin-bottom: 5%; }
+  .people__info-slider {
+    right: 0; } }
+
+@media screen and (min-width: 567px) and (max-width: 767px) {
+  .people h3.people__name {
+    font-size: 28px; }
+  .people__link {
+    font-size: 19px; }
+  .people__info {
+    font-size: 22px; } }
+
+@media screen and (max-width: 567px) {
+  .section__title {
+    padding-left: 10px;
+    padding-right: 10px; }
   .delivery__image {
     overflow: hidden; }
-  .delivery__image img {
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    left: auto; }
   .section__description {
     margin-bottom: 0;
     width: 100%; }
@@ -2461,29 +2574,6 @@ header,
     padding: 35px;
     padding-top: 0;
     padding-bottom: 0; }
-  .delivery__info-box {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 18px; }
-    .delivery__info-box p, .delivery__info-box ul {
-      width: 100%; }
   .services__cat-item {
     padding: 0 !important; }
   .header__content-box {
@@ -2510,9 +2600,10 @@ header,
   .people__link {
     font-size: 16px; }
   .people__info {
-    font-size: 18px; }
+    font-size: 16px;
+    margin-top: 10px; }
   .people__info-item {
-    padding-top: 50px; } }
+    padding-top: 30px; } }
 
 @media screen and (max-width: 360px) {
   .modal__window {
@@ -2523,13 +2614,13 @@ header,
       font-size: 20px; }
   .header__description,
   .header__content .theme-btn {
-    font-size: 20px; }
+    font-size: 18px; }
   .header__contacts-ico {
     width: 36px; }
   .header__contacts-info p, .header__contacts-info a.header__tel {
     font-size: 16px; }
   .menu-init {
-    width: 40px; }
+    width: 54px; }
   .section__header {
     padding-left: 5px;
     padding-right: 5px;
